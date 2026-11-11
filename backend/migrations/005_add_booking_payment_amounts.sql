@@ -1,0 +1,3 @@
+ALTER TABLE bookings
+  ADD COLUMN IF NOT EXISTS amount_paid numeric(10, 2) NOT NULL DEFAULT 0,
+  ADD COLUMN IF NOT EXISTS amount_due numeric(10, 2) NOT NULL DEFAULT 0;
